@@ -19,7 +19,7 @@
     <img loading="lazy" src="https://img.shields.io/github/stars/leoinfnet?style=social"  alt="Github"/>
 </p>
 
-> Status do Projeto :heavy_check_mark :warning (EM DESENVOLVIMENTO)
+> Status do Projeto :heavy_check_mark: :warning: (EM DESENVOLVIMENTO)
 
 ### Tópicos
 
@@ -34,9 +34,9 @@
 </p>
 
 ## Pré-Requisitos
-:warning [JDK 17](http://JDK17.com.br)
-:warning [MVN 3.6](http://JDK17.com.br)
-:warning [Docker](http://JDK17.com.br)
+:warning: [JDK 17](http://JDK17.com.br)
+:warning: [MVN 3.6](http://JDK17.com.br)
+:warning: [Docker](http://JDK17.com.br)
 
 ## Como rodar o projeto
  Baixe o projeto com 
