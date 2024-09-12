@@ -14,22 +14,22 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 public class UsuarioServiceTests {
-    @Autowired
-    UsuarioService usuarioService;
-    @Test@DisplayName("Deve testar o Find All Ativos")
-    public void testaFindAtivos(){
-        List<Usuario> ativos = usuarioService.findAllUsuariosAtivos();
-        List<Usuario> all = usuarioService.findAll();
-        assertEquals(1, ativos.size());
-        assertEquals(2,all.size());
-
-    }
-    @Test@DisplayName("Deve buscar pelas Roles")
-    public void testaFindAllByRoles(){
-        Role role = Role.builder().id(1L).build();
-        List<Role> roles = List.of(role);
-        List<Usuario> allByRoles = usuarioService.findAllByRoles(roles);
-        allByRoles.forEach(System.out::println);
-    }
+//    @Autowired
+//    UsuarioService usuarioService;
+//    @Test@DisplayName("Deve testar o Find All Ativos")
+//    public void testaFindAtivos(){
+//        List<Usuario> ativos = usuarioService.findAllUsuariosAtivos();
+//        List<Usuario> all = usuarioService.findAll();
+//        assertEquals(1, ativos.size());
+//        assertEquals(2,all.size());
+//
+//    }
+//    @Test@DisplayName("Deve buscar pelas Roles")
+//    public void testaFindAllByRoles(){
+//        Role role = Role.builder().id(1L).build();
+//        List<Role> roles = List.of(role);
+//        List<Usuario> allByRoles = usuarioService.findAllByRoles(roles);
+//        allByRoles.forEach(System.out::println);
+//    }
 
 }

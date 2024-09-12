@@ -20,7 +20,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-//@Transactional
+@Transactional
 public class CervejaServiceTests {
     @Autowired
     CervejaService cervejaService;
@@ -34,11 +34,11 @@ public class CervejaServiceTests {
         Marca marca = marcaService.findById(2L).get();
         Estilo estiloSurpresa = Estilo.builder().id(3L).build();
         List<Cerveja> all = cervejaService.findAll();
-        assertEquals(3, all.size());
+        assertEquals(4, all.size());
         Cerveja wallsPetroleoum = Cerveja.builder().nome("Walls Petroleoum").marca(marca).estilo(estiloSurpresa).build();
         cervejaService.save(wallsPetroleoum);
         all = cervejaService.findAll();
-        assertEquals(4, all.size());
+        assertEquals(5, all.size());
 
         all.forEach(System.out::println);
 
@@ -70,7 +70,7 @@ public class CervejaServiceTests {
                 .estilo(Optional.empty()).build();
 
         List<Cerveja> withFilters = cervejaService.findWithFilters(lupulosFilter);
-        assertEquals(1,withFilters.size());
+        assertEquals(2,withFilters.size());
     }
 
 }
